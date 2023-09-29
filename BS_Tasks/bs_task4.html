@@ -1,79 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Task 4</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./bs_task4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Task 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .card:hover{
+        cursor: pointer;
+        transform: scale(0.8);
+      }
+      .card{
+        padding-bottom: 100px;
+        width: 235px;
+      }
+      .card-img-overlay1 {
+        position: absolute;
+        margin-top: 200px; /* adjust this value to move the text up or down */
+        left: 25px;
+      }
+      .card-img-overlay {
+        position: absolute;
+        margin-top: 50px; /* adjust this value to move the text up or down */
+        left: 10px;
+      }
+      .card-img-top {
+        display: block;
+        max-width: 100%;
+        height: 30%;
+      }
+    </style>
 </head>
-
 <body>
-    <a href="../index.html">
-        <h1 style="text-decoration: underline;">INDEX</h1>
-    </a> <br>
-
-    <div class="card-group">
-        <div class="card">
-            <div>
-                <img src="https://c4.wallpaperflare.com/wallpaper/417/976/847/osteospermum-flower-bw-blur-wallpaper-preview.jpg" class="card-img-top" alt="...">
-                <h2 class="card--title">Material <br> Cards</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-            </div>
-            <div class="card-footer">
-                <a href="">Link</a>
-                <a href="" class="mx-3">Link</a>
-            </div>
+  <div class="d-flex justify-content-center" >
+    <div class="row m-5 border-top border-dark">
+      <div class="col-2 card m-2 shadow-sm">
+        <img class="card-img-top1" src="https://c4.wallpaperflare.com/wallpaper/417/976/847/osteospermum-flower-bw-blur-wallpaper-preview.jpg" alt="" />
+        <div class="card-img-overlay1">
+          <p class="card-text display-6 text-light">MATERIAL <br> CARDS</p>
         </div>
-        <div class="card">
-            <div>
-                <img src="https://t4.ftcdn.net/jpg/06/10/24/51/360_F_610245197_kBxRMa1ciR8GdnM9FKTTSmSunqMqh9ie.jpg" class="card-img-top" alt="...">
-                <h2 class="card--title">Material <br> Cards</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-            </div>
-            <div class="card-footer">
-                <a href="">Link</a>
-                <a href="" class="mx-3">Link</a>
-            </div>
+        <div class="card-body">
+          <p class="card-text">
+            Cards for display in <br> portfolio style <br>
+            material design by <br> Google.
+          </p>
         </div>
-        <div class="card">
-            <div class="img--con">
-                <img src="https://t4.ftcdn.net/jpg/06/10/24/51/360_F_610245197_kBxRMa1ciR8GdnM9FKTTSmSunqMqh9ie.jpg" class="card-img-top" >
-                <h2 class="card--title">Material <br> Cards</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-            </div>
-            <div class="card-footer">
-                <a href="">Link</a>
-                <a href="" class="mx-3">Link</a>
-            </div>
+        <div class="card-body border-top pb-5">
+            <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+            <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
         </div>
-        <div class="card">
-            <div class="img--con">
-                <img src="https://t4.ftcdn.net/jpg/06/10/24/51/360_F_610245197_kBxRMa1ciR8GdnM9FKTTSmSunqMqh9ie.jpg" class="card-img-top">
-                <h2 class="card--title">Material <br> Cards</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-            </div>
-            <div class="card-footer">
-                <a href="">Link</a>
-                <a href="" class="mx-3">Link</a>
-            </div>
+  
+      </div>
+      <div class="col-2 card m-2 shadow-sm">
+        <img class="card-img-top" src="https://t4.ftcdn.net/jpg/06/10/24/51/360_F_610245197_kBxRMa1ciR8GdnM9FKTTSmSunqMqh9ie.jpg" alt="" />
+        <div class="card-img-overlay">
+          <p class="card-text display-6 text-light">MATERIAL CARDS</p>
         </div>
+        <div class="card-body">
+          <p class="card-text">
+            Cards for display in <br> portfolio style <br>
+            material design by <br> Google.
+          </p>
+        </div>
+        <div class="card-body border-top pb-5">
+          <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+          <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+      </div>
+  
+      </div>
+      <div class="col-2 card m-2 shadow-sm">
+        <img class="card-img-top" src="https://t4.ftcdn.net/jpg/06/10/24/51/360_F_610245197_kBxRMa1ciR8GdnM9FKTTSmSunqMqh9ie.jpg" alt="" />
+        <div class="card-img-overlay">
+          <p class="card-text display-6 text-light">MATERIAL CARDS</p>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Cards for display in <br> portfolio style <br>
+            material design by <br> Google.
+          </p>
+        </div>
+        <div class="card-body border-top pb-5">
+          <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+          <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+      </div>
+  
+      </div>
+      <div class="col-2 card m-2 shadow-sm">
+        <img class="card-img-top" src="https://t4.ftcdn.net/jpg/06/10/24/51/360_F_610245197_kBxRMa1ciR8GdnM9FKTTSmSunqMqh9ie.jpg" alt="" />
+        <div class="card-img-overlay">
+          <p class="card-text display-6 text-light">MATERIAL CARDS</p>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Cards for display in <br> portfolio style <br>
+            material design by <br> Google.
+          </p>
+        </div>
+        <div class="card-body border-top pb-5">
+          <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+          <a href="#" class="card-link text-warning text-decoration-none">LINK</a>
+      </div>
+  
+      </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  </div>
+    
+  
+  
+  
+  
+  
 </body>
-
 </html>
